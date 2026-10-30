@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Info & Praktisch - KSA Puurs</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ksablauw: '#002E5D',
+            ksaoranje: '#E26D28',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans flex flex-col min-h-screen">
+
+  <!-- Navigatie -->
+  <header class="bg-ksablauw text-white shadow-md sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center">
+      <a href="index.html" class="font-bold text-2xl tracking-wider text-ksaoranje mb-4 md:mb-0">
+        KSA <span class="text-white">PUURS</span>
+      </a>
+      <nav class="flex flex-wrap justify-center gap-4 md:space-x-6 md:gap-0 font-semibold text-sm md:text-base">
+        <a href="index.html" class="hover:text-ksaoranje transition">Home</a>
+        <a href="leiding.html" class="hover:text-ksaoranje transition">Leiding</a>
+        <a href="kalender.html" class="hover:text-ksaoranje transition">Kalender</a>
+        <a href="info.html" class="hover:text-ksaoranje transition">Info</a>
+        <a href="woepie.html" class="hover:text-ksaoranje transition">Woepie</a>
+        <a href="kampsite.html" class="hover:text-ksaoranje transition">Kampsite</a>
+        <a href="contact.html" class="hover:text-ksaoranje transition">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Pagina Titel -->
+  <div class="bg-ksablauw text-white border-b-8 border-ksaoranje py-8 shadow-inner">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h1 class="text-3xl md:text-5xl font-extrabold mb-2">Info & Praktisch</h1>
+      <p class="text-lg text-gray-200">Alles wat je moet weten over de werking, de bannen en handige documenten.</p>
+    </div>
+  </div>
+
+  <main class="flex-grow py-12">
+    <div class="max-w-4xl mx-auto px-4 space-y-12">
+
+      <!-- WAT IS KSA? -->
+      <section class="bg-white rounded-xl shadow-md border-t-4 border-ksaoranje p-6 md:p-8">
+        <h2 class="text-3xl font-bold text-ksablauw mb-6">Wat is KSA?</h2>
+        <div class="prose max-w-none text-gray-600 leading-relaxed space-y-4">
+          <p>
+            KSA staat voor <strong>“Katholieke Studenten Actie”</strong> en is een jeugdbeweging die zich elke zaterdagnamiddag en –avond inzet om kinderen van 5 tot 17 jaar te animeren. We bestaan uit een 25-koppige leidingsploeg. Elke zaterdag haalt onze leidingploeg het onderste uit de kan om de kinderen een superbangelijke namiddag te bezorgen.
+          </p>
+          <p>
+            De leden worden ingedeeld in groepen (bannen) volgens leeftijd. Elke groep heeft een eigen leidingsploeg die ze behouden gedurende het hele werkjaar (september – augustus). Tijdens het werkjaar wordt er voor elke ban een weekend georganiseerd ter voorbereiding van het kamp in de grote vakantie waarmee we ons werkjaar afsluiten.
+          </p>
+          
+          <!-- Bannen Tabel -->
+          <div class="overflow-x-auto mt-6 mb-6">
+            <table class="min-w-full text-left border-collapse">
+              <thead>
+                <tr class="bg-ksablauw text-white">
+                  <th class="py-3 px-4 font-semibold rounded-tl-lg">Ban</th>
+                  <th class="py-3 px-4 font-semibold">Leeftijd</th>
+                  <th class="py-3 px-4 font-semibold rounded-tr-lg">Uren (Zaterdag)</th>
+                </tr>
+              </thead>
+              <tbody class="text-gray-700">
+                <tr class="border-b border-gray-200 hover:bg-gray-50">
+                  <td class="py-3 px-4 font-bold text-ksaoranje">Leeuwkes</td>
+                  <td class="py-3 px-4">5 - 8 jaar</td>
+                  <td class="py-3 px-4">14u – 17u</td>
+                </tr>
+                <tr class="border-b border-gray-200 hover:bg-gray-50">
+                  <td class="py-3 px-4 font-bold text-ksaoranje">Sloebers</td>
+                  <td class="py-3 px-4">9 - 10 jaar</td>
+                  <td class="py-3 px-4">14u – 17u</td>
+                </tr>
+                <tr class="border-b border-gray-200 hover:bg-gray-50">
+                  <td class="py-3 px-4 font-bold text-ksaoranje">Rakkers</td>
+                  <td class="py-3 px-4">11 - 12 jaar</td>
+                  <td class="py-3 px-4">14u – 17u</td>
+                </tr>
+                <tr class="border-b border-gray-200 hover:bg-gray-50">
+                  <td class="py-3 px-4 font-bold text-ksaoranje">Knapen</td>
+                  <td class="py-3 px-4">13 - 14 jaar</td>
+                  <td class="py-3 px-4">14u – 17u</td>
+                </tr>
+                <tr class="border-b border-gray-200 hover:bg-gray-50">
+                  <td class="py-3 px-4 font-bold text-ksaoranje">Jonghernieuwers</td>
+                  <td class="py-3 px-4">15 - 16 jaar</td>
+                  <td class="py-3 px-4">16u – 19u</td>
+                </tr>
+                <tr class="hover:bg-gray-50">
+                  <td class="py-3 px-4 font-bold text-ksaoranje rounded-bl-lg">Hernieuwers</td>
+                  <td class="py-3 px-4">17 jaar</td>
+                  <td class="py-3 px-4 rounded-br-lg">16u – 19u</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3 class="text-xl font-bold text-ksablauw mt-6">De Woepie & Evenementen</h3>
+          <p>
+            Dan is er ook nog de <strong>Woepie</strong>. Woepie is een driemaandelijks “tijdschrift” dat je kan terugvinden op onze site. Hierin komen verslagen van wat uw kleine spruit allemaal heeft uitgestoken op zaterdagnamiddag. Verder vind je er informatie over het kamp, de Vijverbosfeesten, enz…
+          </p>
+          <p>
+            KSA is niet enkel actief op zaterdag. Wij organiseren ook enkele evenementen. Zoals de <strong>Vijverbosfeesten</strong>, een samenwerking tussen KSA Puurs Sint-Pieter, KSA Puurs Roodkapjes (de vroegere VKSJ) en Chiro Puurs. Verder is er nog <strong>Pukema Plage</strong>, onze jaarlijkse beachbar georganiseerd tijdens het Pukema-weekend. Ook <strong>Lloret Night</strong> is een evenement georganiseerd door KSA Puurs.
+          </p>
+        </div>
+      </section>
+
+      <!-- VERHUUR -->
+      <section class="bg-white rounded-xl shadow-md border-t-4 border-ksablauw p-6 md:p-8">
+        <h2 class="text-3xl font-bold text-ksablauw mb-4">Verhuur</h2>
+        <div class="prose max-w-none text-gray-600 leading-relaxed">
+          <p>
+            Bij KSA Puurs worden onze lokalen niet verhuurd aan externen. Wel is het mogelijk om <strong>’t Zolderke</strong> te huren, een gezellige zaal die uitermate geschikt is voor feestjes en bijeenkomsten. De ruimte is uitgerust met sfeervolle verlichting, een ruime koelkast en een muziekinstallatie, waardoor alles aanwezig is voor een geslaagd evenement.
+          </p>
+          <div class="bg-gray-50 p-4 rounded-lg mt-4 border border-gray-200">
+            <p class="font-semibold text-gray-800 mb-2">Voor meer informatie of om een reservatie te maken, kan u contact opnemen met:</p>
+            <ul class="space-y-1">
+              <li class="flex items-center"><span class="font-bold mr-2 text-ksablauw">Ben Spiessens</span></li>
+              <li class="flex items-center">📞 <a href="tel:0496041314" class="ml-2 hover:text-ksaoranje">0496 04 13 14</a></li>
+              <li class="flex items-center">✉️ <a href="mailto:ben.spiessens08@gmail.com" class="ml-2 hover:text-ksaoranje">ben.spiessens08@gmail.com</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- BANKGEGEVENS -->
+      <section class="bg-white rounded-xl shadow-md border-t-4 border-ksaoranje p-6 md:p-8">
+        <h2 class="text-3xl font-bold text-ksablauw mb-4">Bankgegevens</h2>
+        <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 flex flex-col md:flex-row items-center gap-6">
+          <div class="bg-blue-100 text-ksablauw p-4 rounded-full">
+            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"></path></svg>
+          </div>
+          <div>
+            <p class="text-gray-600 mb-2">Voor overschrijvingen van lidgeld, weekends of andere zaken naar KSA Puurs:</p>
+            <ul class="text-lg text-gray-800">
+              <li><span class="font-bold text-ksablauw w-16 inline-block">IBAN:</span> <span class="font-mono tracking-wider">BE43 7330 2245 2601</span></li>
+              <li><span class="font-bold text-ksablauw w-16 inline-block">BIC:</span> <span class="font-mono tracking-wider">KREDBEBBXXX</span></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- DOCUMENTEN DOWNLOADS -->
+      <section class="bg-white rounded-xl shadow-md border-t-4 border-ksablauw p-6 md:p-8">
+        <h2 class="text-3xl font-bold text-ksablauw mb-6">Documenten & Reglementen</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          
+          <a href="#" class="flex items-center p-4 bg-gray-50 hover:bg-gray-100 border border-gray-200 rounded-lg transition group">
+            <svg class="w-8 h-8 text-ksaoranje mr-4 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+            <span class="font-semibold text-gray-700 group-hover:text-ksablauw">Fiscaal attest</span>
+          </a>
+          
+          <a href="#" class="flex items-center p-4 bg-gray-50 hover:bg-gray-100 border border-gray-200 rounded-lg transition group">
+            <svg class="w-8 h-8 text-ksaoranje mr-4 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+            <span class="font-semibold text-gray-700 group-hover:text-ksablauw">Terugbetaling lidgeld mutualiteit</span>
+          </a>
+
+          <a href="#" class="flex items-center p-4 bg-gray-50 hover:bg-gray-100 border border-gray-200 rounded-lg transition group">
+            <svg class="w-8 h-8 text-ksaoranje mr-4 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+            <span class="font-semibold text-gray-700 group-hover:text-ksablauw">Terugbetaling tentenkamp</span>
+          </a>
+
+          <a href="#" class="flex items-center p-4 bg-gray-50 hover:bg-gray-100 border border-gray-200 rounded-lg transition group">
+            <svg class="w-8 h-8 text-ksaoranje mr-4 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+            <span class="font-semibold text-gray-700 group-hover:text-ksablauw">Terugbetaling kamp</span>
+          </a>
+
+          <a href="#" class="flex items-center p-4 bg-gray-50 hover:bg-gray-100 border border-gray-200 rounded-lg transition group">
+            <svg class="w-8 h-8 text-ksaoranje mr-4 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+            <span class="font-semibold text-gray-700 group-hover:text-ksablauw">Huishoudelijk reglement</span>
+          </a>
+
+          <a href="#" class="flex items-center p-4 bg-gray-50 hover:bg-gray-100 border border-gray-200 rounded-lg transition group">
+            <svg class="w-8 h-8 text-ksaoranje mr-4 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+            <span class="font-semibold text-gray-700 group-hover:text-ksablauw">Drugs- en drankbeleid</span>
+          </a>
+
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-400 py-6 text-center text-sm mt-auto">
+    <p>&copy; 2026 KSA Puurs. Alle rechten voorbehouden.</p>
+  </footer>
+
+</body>
+</html>

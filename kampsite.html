@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kampsite - KSA Puurs</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ksablauw: '#002E5D',
+            ksaoranje: '#E26D28',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans flex flex-col min-h-screen">
+
+  <!-- Navigatie -->
+  <header class="bg-ksablauw text-white shadow-md sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center">
+      <a href="index.html" class="font-bold text-2xl tracking-wider text-ksaoranje mb-4 md:mb-0">
+        KSA <span class="text-white">PUURS</span>
+      </a>
+      <nav class="flex flex-wrap justify-center gap-4 md:space-x-6 md:gap-0 font-semibold text-sm md:text-base">
+        <a href="index.html" class="hover:text-ksaoranje transition">Home</a>
+        <a href="leiding.html" class="hover:text-ksaoranje transition">Leiding</a>
+        <a href="kalender.html" class="hover:text-ksaoranje transition">Kalender</a>
+        <a href="info.html" class="hover:text-ksaoranje transition">Info</a>
+        <a href="woepie.html" class="hover:text-ksaoranje transition">Woepie</a>
+        <a href="kampsite.html" class="hover:text-ksaoranje transition">Kampsite</a>
+        <a href="contact.html" class="hover:text-ksaoranje transition">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Kampsite Doorverwijzing -->
+  <main class="flex-grow flex items-center justify-center py-12 px-4 bg-gray-50">
+    <div class="bg-white p-8 md:p-12 rounded-xl shadow-lg border-t-4 border-ksaoranje text-center max-w-2xl w-full">
+      
+      <!-- Tent Icoon -->
+      <div class="flex justify-center mb-6">
+        <div class="bg-blue-50 p-4 rounded-full text-ksablauw">
+          <svg class="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 21h18M3 21l9-18 9 18M3 21l5-10m13 10l-5-10M9 21v-4a2 2 0 012-2h2a2 2 0 012 2v4"></path>
+          </svg>
+        </div>
+      </div>
+
+      <h2 class="text-3xl md:text-4xl font-extrabold text-ksablauw mb-4">Klaar voor het kamp?</h2>
+      <p class="text-gray-600 text-lg mb-8 leading-relaxed">
+        Voor alle informatie rond ons groot zomerkamp, de inschrijvingen, de inpaklijst en de kampfoto's hebben we een gloednieuwe, aparte website gebouwd.
+      </p>
+      
+      <a href="http://www.kamp.ksapuurs.be" target="_blank" rel="noopener noreferrer" class="inline-block bg-ksaoranje hover:bg-orange-600 text-white font-bold py-4 px-8 rounded-full shadow-lg transition transform hover:scale-105">
+        Ga naar de kampsite &rarr;
+      </a>
+      
+      <p class="mt-6 text-sm text-gray-400">
+        De kampsite opent in een nieuw tabblad.
+      </p>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-400 py-6 text-center text-sm mt-auto">
+    <p>&copy; 2026 KSA Puurs. Alle rechten voorbehouden.</p>
+  </footer>
+
+</body>
+</html>

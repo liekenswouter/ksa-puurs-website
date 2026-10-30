@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalender - KSA Puurs</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ksablauw: '#002E5D',
+            ksaoranje: '#E26D28',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans flex flex-col min-h-screen">
+
+  <!-- Navigatie -->
+  <header class="bg-ksablauw text-white shadow-md sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center">
+      <a href="index.html" class="font-bold text-2xl tracking-wider text-ksaoranje mb-4 md:mb-0">
+        KSA <span class="text-white">PUURS</span>
+      </a>
+      <nav class="flex flex-wrap justify-center gap-4 md:space-x-6 md:gap-0 font-semibold text-sm md:text-base">
+        <a href="index.html" class="hover:text-ksaoranje transition">Home</a>
+        <a href="leiding.html" class="hover:text-ksaoranje transition">Leiding</a>
+        <a href="kalender.html" class="hover:text-ksaoranje transition">Kalender</a>
+        <a href="info.html" class="hover:text-ksaoranje transition">Info</a>
+        <a href="woepie.html" class="hover:text-ksaoranje transition">Woepie</a>
+        <a href="kampsite.html" class="hover:text-ksaoranje transition">Kampsite</a>
+        <a href="contact.html" class="hover:text-ksaoranje transition">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Pagina Titel -->
+  <div class="bg-ksablauw text-white border-b-8 border-ksaoranje py-8 shadow-inner">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h1 class="text-3xl md:text-5xl font-extrabold mb-2">Onze Kalender</h1>
+      <p class="text-lg text-gray-200">Bekijk hieronder wanneer jouw ban activiteit heeft. Wijzigingen worden hier automatisch zichtbaar!</p>
+    </div>
+  </div>
+
+  <!-- Kalender Sectie -->
+  <main class="flex-grow py-12">
+    <div class="max-w-5xl mx-auto px-4">
+      <div class="bg-white p-4 sm:p-6 rounded-xl shadow-lg border-t-4 border-ksaoranje">
+        <!-- Responsive iframe container voor Google Calendar -->
+        <div class="aspect-video w-full rounded-lg overflow-hidden border border-gray-200">
+          <iframe 
+            src="https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%23ffffff&ctz=Europe%2FBrussels&showTitle=0&showNav=1&showDate=1&showPrint=0&showTabs=1&showCalendars=0&showTz=0" 
+            style="border-width:0" 
+            width="100%" 
+            height="100%" 
+            frameborder="0" 
+            scrolling="no">
+          </iframe>
+        </div>
+        <p class="text-sm text-gray-500 mt-4 text-center">Tip: Je kan deze agenda ook toevoegen aan je eigen smartphone door op het '+ Google Agenda' icoontje rechtsonder te klikken.</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-400 py-6 text-center text-sm mt-auto">
+    <p>&copy; 2026 KSA Puurs. Alle rechten voorbehouden.</p>
+  </footer>
+
+</body>
+</html>
