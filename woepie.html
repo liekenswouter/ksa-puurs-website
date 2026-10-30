@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="nl">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,13 +19,18 @@
     }
   </script>
 </head>
+
 <body class="bg-gray-50 text-gray-800 font-sans flex flex-col min-h-screen">
 
   <!-- Navigatie -->
   <header class="bg-ksablauw text-white shadow-md sticky top-0 z-50">
     <div class="max-w-6xl mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center">
-      <a href="index.html" class="font-bold text-2xl tracking-wider text-ksaoranje mb-4 md:mb-0">
-        KSA <span class="text-white">PUURS</span>
+      <a href="index.html" class="flex items-center gap-4 mb-4 md:mb-0 hover:opacity-80 transition">
+        <img src="assets/img/ksa_logo.jpeg" alt="Logo KSA Sint-Pieter Puurs"
+          class="h-12 w-auto object-contain rounded-md">
+        <span class="font-bold text-2xl tracking-wider text-ksaoranje">
+          KSA <span class="text-white">PUURS</span>
+        </span>
       </a>
       <nav class="flex flex-wrap justify-center gap-4 md:space-x-6 md:gap-0 font-semibold text-sm md:text-base">
         <a href="index.html" class="hover:text-ksaoranje transition">Home</a>
@@ -54,20 +60,34 @@
         <div class="border-b-2 border-ksaoranje pb-2 mb-6">
           <h2 class="text-2xl font-bold text-ksablauw">Werkjaar 2026 - 2027</h2>
         </div>
-        
+
         <!-- Lijst met Woepies onder elkaar -->
         <div class="flex flex-col space-y-3">
-          
+
           <!-- Bestand 1 -->
-          <a href="#" target="_blank" class="flex items-center p-4 bg-white rounded-lg shadow-sm border border-gray-200 hover:border-ksaoranje hover:shadow-md transition group">
-            <svg class="w-8 h-8 text-ksablauw mr-4 group-hover:text-ksaoranje transition shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
-            <span class="font-bold text-gray-800 text-lg group-hover:text-ksablauw transition truncate">Woepie_Editie_1.pdf</span>
+          <a href="#" target="_blank"
+            class="flex items-center p-4 bg-white rounded-lg shadow-sm border border-gray-200 hover:border-ksaoranje hover:shadow-md transition group">
+            <svg class="w-8 h-8 text-ksablauw mr-4 group-hover:text-ksaoranje transition shrink-0" fill="none"
+              stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
+              </path>
+            </svg>
+            <span
+              class="font-bold text-gray-800 text-lg group-hover:text-ksablauw transition truncate">Woepie_Editie_1.pdf</span>
           </a>
 
           <!-- Bestand 2 (Kopieer dit blok om er meer toe te voegen) -->
-          <a href="#" target="_blank" class="flex items-center p-4 bg-white rounded-lg shadow-sm border border-gray-200 hover:border-ksaoranje hover:shadow-md transition group">
-            <svg class="w-8 h-8 text-ksablauw mr-4 group-hover:text-ksaoranje transition shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
-            <span class="font-bold text-gray-800 text-lg group-hover:text-ksablauw transition truncate">Bestandsnaam_hier.pdf</span>
+          <a href="#" target="_blank"
+            class="flex items-center p-4 bg-white rounded-lg shadow-sm border border-gray-200 hover:border-ksaoranje hover:shadow-md transition group">
+            <svg class="w-8 h-8 text-ksablauw mr-4 group-hover:text-ksaoranje transition shrink-0" fill="none"
+              stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
+              </path>
+            </svg>
+            <span
+              class="font-bold text-gray-800 text-lg group-hover:text-ksablauw transition truncate">Bestandsnaam_hier.pdf</span>
           </a>
 
         </div>
@@ -78,17 +98,27 @@
         <div class="border-b-2 border-gray-300 pb-2 mb-6">
           <h2 class="text-2xl font-bold text-gray-600">Werkjaar 2025 - 2026</h2>
         </div>
-        
+
         <div class="flex flex-col space-y-3">
           <!-- Archief Bestand 1 -->
-          <a href="#" target="_blank" class="flex items-center p-4 bg-gray-50 rounded-lg border border-gray-200 hover:bg-gray-100 transition group">
-            <svg class="w-8 h-8 text-gray-500 mr-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+          <a href="#" target="_blank"
+            class="flex items-center p-4 bg-gray-50 rounded-lg border border-gray-200 hover:bg-gray-100 transition group">
+            <svg class="w-8 h-8 text-gray-500 mr-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
+              </path>
+            </svg>
             <span class="font-semibold text-gray-600 text-base truncate">Woepie_Zomer_2026.pdf</span>
           </a>
-          
+
           <!-- Archief Bestand 2 -->
-          <a href="#" target="_blank" class="flex items-center p-4 bg-gray-50 rounded-lg border border-gray-200 hover:bg-gray-100 transition group">
-            <svg class="w-8 h-8 text-gray-500 mr-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+          <a href="#" target="_blank"
+            class="flex items-center p-4 bg-gray-50 rounded-lg border border-gray-200 hover:bg-gray-100 transition group">
+            <svg class="w-8 h-8 text-gray-500 mr-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
+              </path>
+            </svg>
             <span class="font-semibold text-gray-600 text-base truncate">Woepie_Lente_2026.pdf</span>
           </a>
         </div>
@@ -103,4 +133,5 @@
   </footer>
 
 </body>
+
 </html>

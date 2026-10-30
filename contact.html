@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="nl">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,13 +19,18 @@
     }
   </script>
 </head>
+
 <body class="bg-gray-50 text-gray-800 font-sans flex flex-col min-h-screen">
 
   <!-- Navigatie -->
   <header class="bg-ksablauw text-white shadow-md sticky top-0 z-50">
     <div class="max-w-6xl mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center">
-      <a href="index.html" class="font-bold text-2xl tracking-wider text-ksaoranje mb-4 md:mb-0">
-        KSA <span class="text-white">PUURS</span>
+      <a href="index.html" class="flex items-center gap-4 mb-4 md:mb-0 hover:opacity-80 transition">
+        <img src="assets/img/ksa_logo.jpeg" alt="Logo KSA Sint-Pieter Puurs"
+          class="h-12 w-auto object-contain rounded-md">
+        <span class="font-bold text-2xl tracking-wider text-ksaoranje">
+          KSA <span class="text-white">PUURS</span>
+        </span>
       </a>
       <nav class="flex flex-wrap justify-center gap-4 md:space-x-6 md:gap-0 font-semibold text-sm md:text-base">
         <a href="index.html" class="hover:text-ksaoranje transition">Home</a>
@@ -48,17 +54,24 @@
 
   <main class="flex-grow py-12">
     <div class="max-w-6xl mx-auto px-4">
-      <div class="bg-white rounded-xl shadow-lg overflow-hidden border-t-4 border-ksaoranje grid grid-cols-1 lg:grid-cols-2">
-        
+      <div
+        class="bg-white rounded-xl shadow-lg overflow-hidden border-t-4 border-ksaoranje grid grid-cols-1 lg:grid-cols-2">
+
         <!-- Linker kolom: Contact info & Map -->
         <div class="p-8 md:p-12 bg-gray-50">
           <h2 class="text-2xl font-bold text-ksablauw mb-6">Onze Gegevens</h2>
-          
+
           <div class="space-y-6 mb-8">
             <!-- Adres -->
             <div class="flex items-start">
               <div class="bg-blue-100 p-3 rounded-full text-ksablauw mr-4 shrink-0">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                </svg>
               </div>
               <div>
                 <h3 class="font-bold text-gray-800">KSA Sint-Pieter Puurs</h3>
@@ -69,24 +82,24 @@
             <!-- Email -->
             <div class="flex items-start">
               <div class="bg-blue-100 p-3 rounded-full text-ksablauw mr-4 shrink-0">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                  </path>
+                </svg>
               </div>
               <div>
                 <h3 class="font-bold text-gray-800">E-mail</h3>
-                <a href="mailto:info@ksapuurs.be" class="text-gray-600 hover:text-ksaoranje transition">info@ksapuurs.be</a>
+                <a href="mailto:info@ksapuurs.be"
+                  class="text-gray-600 hover:text-ksaoranje transition">info@ksapuurs.be</a>
               </div>
             </div>
           </div>
 
           <!-- Google Maps Embed -->
           <div class="w-full h-64 bg-gray-200 rounded-lg overflow-hidden shadow-inner">
-            <iframe 
-              width="100%" 
-              height="100%" 
-              frameborder="0" 
-              scrolling="no" 
-              marginheight="0" 
-              marginwidth="0" 
+            <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
               src="https://maps.google.com/maps?q=Fortbaan+5,+2870+Puurs&t=&z=15&ie=UTF8&iwloc=&output=embed">
             </iframe>
           </div>
@@ -95,34 +108,42 @@
         <!-- Rechter kolom: Contactformulier -->
         <div class="p-8 md:p-12">
           <h2 class="text-2xl font-bold text-ksablauw mb-6">Stuur een bericht</h2>
-          
+
           <form id="contactForm" action="mailto:info@ksapuurs.be" method="POST" enctype="text/plain" class="space-y-5">
             <div>
               <label for="naam" class="block text-sm font-semibold text-gray-700 mb-1">Naam</label>
-              <input type="text" id="naam" name="Naam" placeholder="Jouw naam of de naam van je kind" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-ksaoranje focus:border-ksaoranje outline-none transition" required>
+              <input type="text" id="naam" name="Naam" placeholder="Jouw naam of de naam van je kind"
+                class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-ksaoranje focus:border-ksaoranje outline-none transition"
+                required>
             </div>
-            
+
             <div>
               <label for="email" class="block text-sm font-semibold text-gray-700 mb-1">E-mailadres</label>
-              <input type="email" id="email" name="Email" placeholder="jouw@email.com" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-ksaoranje focus:border-ksaoranje outline-none transition" required>
+              <input type="email" id="email" name="Email" placeholder="jouw@email.com"
+                class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-ksaoranje focus:border-ksaoranje outline-none transition"
+                required>
             </div>
 
             <div>
               <label for="onderwerp" class="block text-sm font-semibold text-gray-700 mb-1">Onderwerp</label>
-              <select id="onderwerp" name="Onderwerp" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-ksaoranje focus:border-ksaoranje outline-none transition">
+              <select id="onderwerp" name="Onderwerp"
+                class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-ksaoranje focus:border-ksaoranje outline-none transition">
                 <option value="Algemene vraag">Algemene vraag</option>
                 <option value="Inschrijven">Inschrijven / Lid worden</option>
                 <option value="Zolderke huren">Zolderke huren</option>
                 <option value="Kamp">Vraag over het kamp</option>
               </select>
             </div>
-            
+
             <div>
               <label for="bericht" class="block text-sm font-semibold text-gray-700 mb-1">Bericht</label>
-              <textarea id="bericht" name="Bericht" rows="4" placeholder="Waarmee kunnen we je helpen?" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-ksaoranje focus:border-ksaoranje outline-none transition" required></textarea>
+              <textarea id="bericht" name="Bericht" rows="4" placeholder="Waarmee kunnen we je helpen?"
+                class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-ksaoranje focus:border-ksaoranje outline-none transition"
+                required></textarea>
             </div>
-            
-            <button type="submit" class="w-full bg-ksablauw hover:bg-blue-900 text-white font-bold py-3 px-4 rounded-lg shadow-md transition transform hover:scale-[1.02]">
+
+            <button type="submit"
+              class="w-full bg-ksablauw hover:bg-blue-900 text-white font-bold py-3 px-4 rounded-lg shadow-md transition transform hover:scale-[1.02]">
               Verstuur Bericht
             </button>
           </form>
@@ -139,9 +160,9 @@
 
   <!-- Script voor dynamische email bestemming -->
   <script>
-    document.getElementById('contactForm').addEventListener('submit', function(e) {
+    document.getElementById('contactForm').addEventListener('submit', function (e) {
       const onderwerp = document.getElementById('onderwerp').value;
-      
+
       if (onderwerp === 'Zolderke huren') {
         this.action = 'mailto:ben.spiessens08@gmail.com';
       } else {
@@ -151,4 +172,5 @@
   </script>
 
 </body>
+
 </html>
